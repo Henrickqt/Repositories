@@ -23,6 +23,9 @@ namespace Repositories.WebAPI.Controllers
             _logger = logger;
         }
 
+        /// <summary>Get a list of all weather forecasts</summary>
+        /// <returns>Returns the list with all weather forecasts</returns>
+        /// <response code="200">If the list of all weather forecasts was returned</response>
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
