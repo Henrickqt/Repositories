@@ -1,27 +1,27 @@
 # Repositories
 
-Esse projeto È uma Web API RESTful desenvolvida utilizando o [C#](https://docs.microsoft.com/pt-br/dotnet/csharp/) e o [ASP.NET Core](https://docs.microsoft.com/pt-br/aspnet/core/?view=aspnetcore-3.1).
+Esse projeto √© uma Web API RESTful desenvolvida utilizando o [C#](https://docs.microsoft.com/pt-br/dotnet/csharp/) e o [ASP.NET Core](https://docs.microsoft.com/pt-br/aspnet/core/?view=aspnetcore-3.1).
 
-Tem como finalidade armazenar dados de Desenvolvedores e de seus Projetos -- È quase um GitHub :laughing:
+Tem como finalidade armazenar dados de Desenvolvedores e de seus Projetos -- √© quase um GitHub :laughing:
 
-## Rotas disponÌveis
+## Rotas dispon√≠veis
 
-![]()
+![](https://github.com/Henrickqt/Repositories/blob/master/assets/end-points.jpg)
 
-## Tecnologias e feramentas utilizadas
+## Tecnologias e ferramentas utilizadas
 
-- **PersistÍncia dos dados:** foi utilizado o [SQLServer](https://www.microsoft.com/pt-br/sql-server/sql-server-2019) em conjunto com o [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/).
-- **Testes automatizados:** foi utilizado o [xUnit](https://xunit.net/) para elaboraÁ„o dos testes de integraÁ„o.
-- **DocumentaÁ„o e testes manuais:** foi utilizado o [Swagger](https://swagger.io/).
-- **Controle de versıes:**, foi utilizado o [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html).
+- **Persist√™ncia dos dados:** foi utilizado o [SQLServer](https://www.microsoft.com/pt-br/sql-server/sql-server-2019) em conjunto com o [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/).
+- **Testes automatizados:** foi utilizado o [xUnit](https://xunit.net/) para elabora√ß√£o dos testes de integra√ß√£o.
+- **Documenta√ß√£o e testes manuais:** foi utilizado o [Swagger](https://swagger.io/).
+- **Controle de vers√µes:** foi utilizado o [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html).
 
-## EstratÈgias de soluÁ„o
+## Estrat√©gias de solu√ß√£o
 
-- Foi utilizado a tÈcnica de [Engenharia Reversa](https://docs.microsoft.com/pt-br/ef/core/managing-schemas/scaffolding?tabs=dotnet-core-cli), que È o processo (baseado no esquema do banco de dados) de obtenÁ„o das classes de entidades e contexto.
-- Foi utilizado classes DTO (Data Transfer Object) para restringir que dados sensÌveis (tal como `Password`) sejam enviados na requisiÁ„o ou resposta de alguns verbos HTTP;
-- Foi realizado uma validaÁ„o dos dados provindos da requisiÁ„o dos verbos PUT e POST, ao qual:
-  - `Name`, `Bio`, `ProjectName`, `Description` and `Languages` n„o podem ser nulos nem vazios;
-  - `Email` deve ser um email v·lido (email@example.com);
-  - `Password` deve conter pelo menos 1 letra, 1 digito, 1 sÌmbolo e ter 8 ou mais caracteres.
+- Foi utilizado a t√©cnica de [Engenharia Reversa](https://docs.microsoft.com/pt-br/ef/core/managing-schemas/scaffolding?tabs=dotnet-core-cli), que √© o processo (baseado no esquema do banco de dados) de obten√ß√£o das classes de entidades e contexto.
+- Foi utilizado classes DTO (Data Transfer Object) para restringir que dados sens√≠veis (tal como `Password`) sejam enviados na requisi√ß√£o ou resposta de alguns verbos HTTP;
+- Foi realizado uma valida√ß√£o dos dados provindos da requisi√ß√£o dos verbos PUT e POST, ao qual:
+  - `Name`, `Bio`, `ProjectName`, `Description` e `Languages` n√£o podem ser nulos nem vazios;
+  - `Email` deve ser um email v√°lido (email@example.com);
+  - `Password` deve conter pelo menos 1 letra, 1 digito, 1 s√≠mbolo e ter 8 ou mais caracteres.
 
-***ObservaÁ„o:** Em relaÁ„o aos testes de integraÁ„o, a segunda vez que o teste de sucesso na rota *`POST: api/Developers`* for executado, este ir· falhar devido ao email informado ser ˙nico. Para tal, modifique o email antes de execut·-lo novamente.*
+***Observa√ß√£o:** Em rela√ß√£o aos testes de integra√ß√£o, a segunda vez que o teste de sucesso na rota* `POST: api/Developers` *for executado, este ir√° falhar devido ao email informado ser √∫nico. Para tal, modifique o email antes de execut√°-lo novamente.*
