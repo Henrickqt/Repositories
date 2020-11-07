@@ -13,7 +13,7 @@ Tem como finalidade armazenar dados de Desenvolvedores e de seus Projetos -- é 
 - **Persistência dos dados:** foi utilizado o [SQLServer](https://www.microsoft.com/pt-br/sql-server/sql-server-2019) em conjunto com o [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/).
 - **Testes automatizados:** foi utilizado o [xUnit](https://xunit.net/) para elaboração dos testes de integração.
 - **Documentação e testes manuais:** foi utilizado o [Swagger](https://swagger.io/).
-- **Controle de versões:**, foi utilizado o [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html).
+- **Controle de versões:** foi utilizado o [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html).
 
 ## Estratégias de solução
 
